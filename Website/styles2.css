@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  padding-top: 0;
+}
+
+.topbar {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 15px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 99;
+}
+
+.primary-menu {
+  display: flex;
+  transition: all 0.6s cubic-bezier(.4,.08,0,1.02);
+}
+
+.topbar a {
+  color: #999;
+  text-decoration: none;
+  padding: 0.8em 1em 1em 1em; 
+  font-size: 0.9em;
+  letter-spacing: 0.06em;
+  transition: all 0.2s;
+}
+
+.topbar a:hover {
+  color: #fff;
+}
+
+.hamburger-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 2;
+}
+
+.logo {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  z-index: 2;
+  height: 33px;
+}
+
+.hamburger-btn::part(base) {
+  color: #999;
+  font-size: 1.6em;
+}
+
+h1,h2,h3,h4,h5 {
+  margin-top: 0;
+}
+
+#affect {
+  position: relative;
+  height: 100vh;
+}
+
+h3 {
+  position: absolute;
+  color: white;
+  font-size: 2.2em;
+  left: 15%;
+  top: 11%;
+  font-weight: 900;
+}
+
+.line-h3 {
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 50vw;
+  left: -10px;
+  top: 18%;
+  z-index: 2;
+}
+
+#affect-image {
+  width: 100%;
+}
+
+.b-image {
+  position: absolute;
+  z-index: -1;
+  left: 30%;
+  top: 23%;
+  width: 62%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.b-colour {
+  position: absolute;
+  background-color: #191C23;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+h2 {
+  color: #999;
+  font-weight: 200;
+  font-size: 3.5em;
+  padding-top: 6vh;
+}
+h2:hover {
+  color: white;
+}
+
+.affect-3h h2 {
+  cursor: pointer;
+}
+
+.affect-3h {
+  padding: 23vh 0 10vh 12vw; /* top right bot left */
+  width: 45%;
+}
+
+.box-test{
+  display: flex;
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  margin-top: 100px;
+  margin-left: 100px;
+  padding-left: 100px;
+}
+.test-box-container {
+  display: flex;
+}
+
+.swiper-a,
+.swiper-c,
+.swiper-e {
+  z-index: 101;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-a {
+  height: 76.2vh;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  bottom: -96.2vh;
+}
+
+.swip-container {
+  position: relative;
+}
+
+.time-yrs-container {
+  position: absolute;
+  bottom: -4vh;
+}
+
+.time-yrs {
+  display: flex;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 25vw;
+  font-size: 2.5vw;
+  font-weight: 700;
+  z-index: 999;
+}
+
+.linechart {
+  position: absolute;
+  margin: 5vh 0 0 -70vw;
+  z-index: 998;
+}
+
+.a-intro {
+  position: absolute;
+  z-index: 1000;
+  margin: 12vh 0 0 7vw;
+  width: 32vw;
+}
+h5 {
+  font-size: 4vw;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.intro-para {
+  font-size: 1.5vw;
+}
+.g-signs {
+  display: flex;
+}
+.g-signs p {
+  font-size: 1.3vw;
+  font-weight: 700;
+  margin: -1vh 0 5vh 2vw;
+  line-height: 2.5;
+}
+
+.graph-note1 {
+  font-size: 1.3vw;
+  font-weight: 500;
+  width: 25vw;
+  margin: 0 0 0 56vw;
+}
+.graph-note1 p {
+  margin: -5vh 0 0 4vw;
+}
+
+.graph-note2 {
+  font-size: 1.3vw;
+  font-weight: 500;
+  width: 25vw;
+  margin: -8vh 0 0 130vw;
+}
+.graph-note2 p {
+  margin: -16vh 0 0 4vw;
+}
+
+.graph-note3 {
+  font-size: 1.3vw;
+  font-weight: 500;
+  width: 25vw;
+  margin: -40vh 0 0 190vw;
+}
+.graph-note3 p {
+  margin: 0 0 0 4vw;
+}
+
+.swiper-c {
+  height: 76.2vh;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  bottom: -96.2vh;
+}
+
+.water-quality {
+  margin-left: 50vw;
+}
+.c-para {
+  font-size: 1.3vw;
+  font-weight: 500;
+  width: 25vw;
+  margin: 5vh 0 3vh 0;
+}
+.mini-para {
+  font-size: 1vw;
+  font-weight: 300;
+  width: 25vw;
+  margin: -3vh 0 3vh 0;
+}
+
+
+.bar-container {
+  display: flex;
+  margin: 2vh 0 0 0;
+}
+.MNDbar1 {
+  width: 0.5vw;
+  height: 5vh;
+  background-color: #4EB0D5;
+}
+.MNDgraph p {
+  font-size: 1vw;
+  font-weight: 700;
+  width: 25vw;
+  margin: 1vh 0 0 1.5vw;
+}
+.MNDbar2 {
+  width: 2.5vw;
+  height: 5vh;
+  background-color: #1B2437;
+}
+.MNDbar3 {
+  width: 17.5vw;
+  height: 5vh;
+  background-color: #D1463E;
+}
+
+.AGEgraph {
+  display: flex;
+}
+.AGEgraph .bar-container {
+  flex-direction: column;
+}
+.AGEgraph p {
+  text-align: center;
+  font-size: 1.3vw;
+  font-weight: 700;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+.AGEbar1 {
+  height: 36vh;
+  width: 3.5vw;
+  background-color: #D1463E;
+  margin: 5vh 0 0 1.5vw;
+}
+.AGEbar2 {
+  height: 41vh;
+  width: 3.5vw;
+  background-color: #1B2437;
+  margin: 5vh 0 0 1.5vw;
+}
+.AGEbar3 {
+  height: 20.5vh;
+  width: 3.5vw;
+  background-color: #4EB0D5;
+  margin: 5vh 0 0 1.5vw;
+}
+
+.water-flow-para {
+  width: 30vw;
+  font-size: 1.3vw;
+  font-weight: 500;
+  width: 25vw;
+  margin: 5vh 0 3vh 0;
+}
+
+.wilcannia {
+  margin: 10vh 0 0 15vw;
+}
+
+.swiper-e {
+  height: 76.2vh;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  bottom: -96.2vh;
+}
+
+.plants img {
+  max-height: 76vh;
+  margin-left: 50vw;
+}
+.plant-para {
+  width: 30vw;
+  font-size: 1.3vw;
+  font-weight: 500;
+  width: 25vw;
+  margin: 4vh 0 3vh 5vw;
+}
+.wildlife img {
+  max-height: 76vh;
+  margin-left: 20vw;
+}
+
+.swiper-close-btn {
+  position: absolute;
+  left: 5vw;
+  top: -10vh;
+  font-size: 10vh;
+}
+
+.swiper-close-btn::part(base) {
+  color: #999;
+}
+
+.swiper-close-btn::part(base):hover {
+  color: #fff;
+}
+
+#about {
+  width: 100%;
+  height: 333vh;
+  background-color: #0c0c0d;
+  margin-top: -4vh;
+}
+h6 {
+  color: white;
+  font-size: 4.2vw;
+  font-weight: 700;
+  margin: 15vh 0 1vh 0;
+}
+.the-mdba {
+  padding-top: 12vh;
+  margin: 3vh 0 0 3vw;
+}
+.thin-ice {
+  margin: 0 0 0 -5vw;
+  height: 0.09vh;
+  width: 50vw;
+  background-color: white;
+}
+.socials {
+  font-size: 4vw;
+  margin-top: 1vh;
+}
+.social-icon {
+  margin-left: 2.5vw;
+}
+.the-mdba p {
+  color: white;
+  font-size: 1.4vw;
+  line-height: 1.5;
+  width: 40vw;
+}
+
+.how2help {
+  padding-top: 12vh;
+  margin: 3vh 0 0 55vw;
+}
+.thin-ice {
+  margin: 0 0 0 -5vw;
+  height: 0.09vh;
+  width: 50vw;
+  background-color: white;
+}
+.socials {
+  font-size: 4vw;
+  margin-top: 1vh;
+}
+.how2help .social-icon {
+  margin-left: 1.5vw;
+}
+.small-info {
+  color: white;
+  font-size: 1.1vw;
+  line-height: 1.5;
+  width: 35vw;
+  margin-top: 0;
+}
+.cause {
+  color: white;
+  font-size: 2vw;
+  font-weight: 700;
+  margin: 4vh 0 2vh 0;
+}
